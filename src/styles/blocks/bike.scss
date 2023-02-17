@@ -1,0 +1,39 @@
+.bike {
+  max-width: 280px;
+
+  color: #fff;
+
+  @include onTablet {
+    max-width: 392px;
+  }
+
+  @include onDesctop {
+    max-width: 324px;
+  }
+
+  &__img {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  &__paragraph {
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+  }
+}

@@ -1,0 +1,27 @@
+.info {
+  color: #fff;
+
+  &__title {
+    margin-bottom: 8px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+
+    text-decoration: none;
+    color: #fff;
+
+    &--last {
+      margin-bottom: 0;
+    }
+  }
+}

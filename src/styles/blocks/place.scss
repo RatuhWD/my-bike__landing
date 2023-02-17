@@ -1,0 +1,66 @@
+.place {
+  max-width: 1020px;
+  margin-bottom: 40px;
+
+  @include onTablet {
+    margin-bottom: 48px;
+  }
+
+  color: #fff;
+
+  &__images {
+    display: grid;
+    margin-bottom: 16px;
+
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 130px;
+    gap: 20px;
+
+    justify-content: center;
+
+    @include onTablet {
+      grid-template-columns: 392px 184px;
+      grid-template-rows: 187px;
+    }
+
+    @include onDesctop {
+      grid-template-columns: 675px 325px;
+      grid-template-rows: 320px;
+    }
+
+    &--last {
+      @include onTablet {
+        grid-template-columns:184px 392px;
+      }
+  
+      @include onDesctop {
+        grid-template-columns:325px 675px;
+      }
+    }
+  }
+
+  &__photo-container {
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}

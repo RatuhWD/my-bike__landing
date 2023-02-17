@@ -1,0 +1,47 @@
+.description {
+
+  &__container {
+    display: flex;
+
+    max-width: 280px;
+    margin: 0 auto 90px;
+    padding-top: 60px;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include onTablet {
+      max-width: 590px;
+      padding-top: 120px;
+      margin-bottom: 130px;
+
+      flex-direction: row;
+    }
+
+    @include onDesctop {
+      max-width: 1200px;
+      margin-bottom: 164px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__pargraph {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 140%;
+
+    color: #fff;
+
+    @include onTablet {
+      max-width: 288px;
+    }
+
+    @include onDesctop {
+      max-width: 500px;
+    }
+  }
+
+}

@@ -1,0 +1,95 @@
+.menu {
+  background-color: #c2c2c2;
+
+  &__container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 29px 20px 80px;
+
+    @include onTablet {
+      max-width: 590px;
+      padding: 34px 0 130px;
+    }
+
+    @include onDesctop {
+      max-width: 1200px;
+      padding: 36px 0 200px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 38px;
+
+    @include onTablet {
+      height: 56px;
+    }
+  }
+
+  &__close-button {
+    background-image: url(../images/menu-close.png);
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 44px 0px 40px;
+  }
+
+  &__item {
+    margin-bottom: 32px;
+
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0;
+    text-decoration: none;
+    color: #1d1d1d;
+
+
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-color: #1d1d1d;
+    }
+  }
+
+  &__call {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+
+    &--phone {
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    &--action {
+      border-bottom: 1px solid #1d1d1d;;
+    }
+  }
+}
